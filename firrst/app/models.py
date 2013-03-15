@@ -11,5 +11,5 @@ class Post(models.Model):
     feed = models.ForeignKey(Feed)
     fetched_at = models.DateTimeField()
     read = models.BooleanField(default=False)
-    title = models.TextField()
+    title = models.CharField(max_length=255)
     content = models.TextField()
