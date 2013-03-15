@@ -25,3 +25,9 @@ pip-log.txt
 
 # Vim tmps
 *.swp
+
+# Rope project
+.ropeproject
+
+# Database
+*.sqlite3
