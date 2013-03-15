@@ -11,7 +11,7 @@ function get_sidebar() {
         gui.sidebar.html(msg);
         gui.sidebar.find('li').on('click', function(e){
             e.preventDefault();
-            show_feed($(this).attr('data-feedid'));
+            show_feed($(this).attr('data-feed_id'));
         });
     });
 }
