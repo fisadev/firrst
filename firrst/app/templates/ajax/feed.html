@@ -1,0 +1,9 @@
+<header>
+<h2>{{ feed.name }}</h2>
+</header>
+
+<ul>
+  {% for item in items %}
+    <li>{{ item.title }}</li>
+  {% endfor %}
+</ul>

@@ -44,7 +44,7 @@ class Feed(models.Model):
 
 
 class Item(models.Model):
-    feed = models.ForeignKey(Feed)
+    feed = models.ForeignKey(Feed, related_name='items')
     fetched_at = models.DateTimeField()
     read = models.BooleanField(default=False)
     title = models.CharField(max_length=255)
