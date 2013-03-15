@@ -13,7 +13,7 @@ html, body, ul, li, a, p, h1, h2, h3, h4 {
     font-style: normal;
 }
 
-header#topbar {
+#topbar {
     z-index: 99;
     position: fixed;
     height: 4em;
@@ -23,42 +23,42 @@ header#topbar {
     border-bottom: 4px solid #2ba6cb;
 }
 
-header#topbar  h1 {
+#topbar  h1 {
     display: inline-block;
     font-size: 2em;
     margin: 0.4em 1.5em 0.4em 1.5em;
     width: auto;
 }
 
-header#topbar nav {
+#topbar nav {
     display: inline-block;
     height: 100%;
     color: #2ba6cb;
     margin-left: 1em;
 }
 
-header#topbar nav ul {
+#topbar nav ul {
     display: block;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
 }
 
-header#topbar nav ul li {
+#topbar nav ul li {
     display: inline;
     padding-right: 2em;
 }
 
-header#topbar nav ul li a {
+#topbar nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-header#topbar nav ul li a:hover {
+#topbar nav ul li a:hover {
     color: #2ba6cb;
 }
 
-section#sidebar {
+#sidebar {
     overflow: auto;
     z-index: 1;
     position: fixed;
@@ -71,28 +71,28 @@ section#sidebar {
     padding: 2em 0 1em 0;
 }
 
-section#sidebar ul {
+#sidebar ul {
     width: 100%;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
 }
 
-section#sidebar ul li {
+#sidebar ul li {
     width: 100%;
     padding: 0.2em 0.5em 0.2em 2em;
     margin-bottom: 0.5em;
 }
 
-section#sidebar ul li a {
+#sidebar ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-section#sidebar ul li:hover {
+#sidebar ul li:hover {
     background-color: #3bb6db;
 }
 
-section#content h2 {
+#content h2 {
     color: #DD4814;
 }
