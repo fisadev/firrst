@@ -1,5 +1,5 @@
 <ul>
   {% for feed in feeds %}
-    <li><a href="#">{{ feed.name }}</a></li>
+    <li data-feedid="{{ feed.id }}"><a href="#">{{ feed.name }}</a></li>
   {% endfor  %}
 </ul>

@@ -8,7 +8,15 @@ function get_sidebar() {
     request = $.ajax({url: urls.get_sidebar});
     request.done(function(msg) {
         gui.sidebar.html(msg);
+        gui.sidebar.find('li').on('click', function(e){
+            e.preventDefault();
+            show_feed($(this).attr('data-feedid'));
+        });
     });
+}
+
+function show_feed(feed_id) {
+    alert(feed_id);
 }
 
 $(document).ready(function() {
