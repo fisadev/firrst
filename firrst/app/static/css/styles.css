@@ -1,73 +1,88 @@
-body, div, h1, h2, ul, li, a, p {
+header, footer, section, aside, nav, article { 
+    display: block;
+}
+
+html, body {
+    height: 100%;
+}
+
+html, body, ul, li, a, p, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
     font-family: "OpenSans", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
     font-style: normal;
 }
 
-.top-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 100%;
-}
-
-.title-bar {
+header#topbar {
+    padding: 0.5em 0.5em 0.5em 2.5em;
     color: #ffffff;
-    display: block;
-    height: 40px;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    padding: 12px 0 0 150px;
-    background-color: #000000;
+    background-color: #333333;
 }
 
-.title-bar h1 {
-    float: left;
-    font-size: 20px;
+header#topbar  h1 {
+    display: inline-block;
+    font-size: 2em;
+    width: auto;
+    margin: 0 3em 0 0;
 }
 
-.nav-bar {
-    color: #ffffff;
-    display: block;
-    height: 35px;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    padding: 16px 0 0 150px;
-    background-color: #2ba6cb;
+header#topbar nav {
+    display: inline-block;
+    padding: 0.5em;
+    color: #2ba6cb;
 }
 
-.nav-bar ul {
+header#topbar nav ul {
     display: block;
-    float: left;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
 }
 
-.nav-bar ul li {
+header#topbar nav ul li {
     display: inline;
-    padding-right: 30px;
+    padding-right: 2em;
 }
 
-.top-bar h1 a, .nav-bar ul li a {
+header#topbar nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.title-bar h1 a:hover, .nav-bar ul li a:hover {
+header#topbar nav ul li a:hover {
     text-decoration: underline;
 }
 
-div.content {
-    margin-top: 100px;
-    padding: 16px 0 100px 150px;
+section#sidebar {
+    float: left;
+    width: 10em;
+    height: 100%;
+    background-color: #2ba6cb;
+    color: #ffffff;
+    padding: 1em;
 }
 
-div.content h2 {
-    margin: 20px 0 5px 0;
-    font-size: 20px;
+section#sidebar ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+section#sidebar ul li {
+    padding-bottom: 0.5em;
+}
+
+section#sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section#sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+section#content h2 {
     color: #DD4814;
 }
