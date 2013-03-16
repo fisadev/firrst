@@ -16,6 +16,7 @@ html, body, ul, li, a, p, h1, h2, h3, h4 {
 #topbar {
     z-index: 99;
     position: fixed;
+    top: 0;
     height: 4em;
     width: 100%;
     color: #ffffff;
@@ -91,6 +92,10 @@ html, body, ul, li, a, p, h1, h2, h3, h4 {
 
 #sidebar ul li:hover {
     background-color: #3bb6db;
+}
+
+#content {
+    padding: 5em 1em 1em 13em;
 }
 
 #content h2 {
